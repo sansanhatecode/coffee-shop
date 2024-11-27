@@ -6,7 +6,7 @@ const ShopInfoCard = () => {
     <div className="coffee-shop">
       <div className="coffee-shop-header">
         <img 
-          src="https://via.placeholder.com/80x120" 
+          src="/assets/image/shop.png" 
           alt="Highlands Coffee" 
           className="coffee-shop-image" 
         />

@@ -17,7 +17,6 @@ function App() {
         <h3>Gần đây</h3>
         <Slider />
       </div>
-      <ShopInfoCard />
     </div>
   );
 }

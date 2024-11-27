@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/Header';
+import Slider from './components/Slider/Slider';
+import './App.css'
+import Filter from './components/filter/Filter';
+import ShopInfoCard from './components/shop-info-card/ShopInfoCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Filter />
+      <div className='slider-container'>
+        <h3>Đang hot</h3>
+        <Slider />
+      </div>
+      <div className='slider-container'>
+        <h3>Gần đây</h3>
+        <Slider />
+      </div>
+      <ShopInfoCard />
     </div>
   );
 }
